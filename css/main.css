@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,5 +52,53 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #747B95;
+  text-align: center;
+  background-color: #FAFAFA;
+  margin: 0 22px;
+}
+
+header {
+  margin: 46px auto 80px auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333950;
+  margin-bottom: 40px;
+}
+
+.intro {
+  margin-bottom: 100px;
+}
+
+.intro button {
+  margin-top: 62px;
+}
+
+button {
+  outline: none;
+  border: none;
+  height: 56px;
+  width: 172px;
+  border-radius: 28px;
+  background-color: #5175FF;
+  color: white;
+}
+
+.plan {
+  background-color: white;
+  margin-top: 33px;
+  height: 500px;
+  border-radius: 13px;
+  -webkit-box-shadow: 0 50px 50px rgba(75, 92, 154, 0.25);
+          box-shadow: 0 50px 50px rgba(75, 92, 154, 0.25);
 }
 /*# sourceMappingURL=main.css.map */
