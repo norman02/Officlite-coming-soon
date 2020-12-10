@@ -38,8 +38,8 @@ button {
     height: 56px;
     width: 172px;
     border-radius: 28px;
-    background-color: #5175FF;
-    color: white;
+    background-color: #E5EAFF;
+    color: #5175FF;
 }
 
 
@@ -47,8 +47,37 @@ button {
 .plan {
     background-color: white;
     margin-top: 33px;
-    height: 500px;
     border-radius: 13px;
-    box-shadow: 0 50px 50px fade-out( #4B5C9A, 0.75);  
+    box-shadow: 0 50px 50px fade-out( #4B5C9A, 0.75); 
+    
+    
+    h2 {
+        padding-top: 38px;
+        padding-bottom: 54px;
+        font-size: bold;
+        font-weight: 700;
+        color: #333950;
+    }
+
+    .price {
+        font-size: 56px;
+        line-height: 1.4;
+        color: #333950;
+    }
+
+    li {
+        margin-bottom: 28px;
+    }
+
+    .details {
+        margin-bottom: 68px;
+        color: #333950;
+    }
+
+    button {
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    
 }
 
