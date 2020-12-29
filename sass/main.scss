@@ -3,14 +3,21 @@
 @import "layout/reset";
 
 
-    $shadow:  #4B5C9A;
+
+$dark-blue: #333950;
+$light-blue: #5175FF;
+$light-gray: #747B95;
+$offwhite: #FAFAFA;
+$shadow:  #4B5C9A;
+$very-light-blue: #E5EAFF;
+
 body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #747B95;
+    color: $light-gray;
     text-align: center;
-    background-color: #FAFAFA;
+    background-color: $offwhite;
     margin: 0 22px;
 }
 
@@ -21,7 +28,7 @@ header {
 h1 {
     font-size: 40px;
     font-weight: 700;
-    color: #333950;
+    color: $dark-blue;
     margin-bottom: 40px;
 }
 
@@ -38,8 +45,8 @@ button {
     height: 56px;
     width: 172px;
     border-radius: 28px;
-    background-color: #E5EAFF;
-    color: #5175FF;
+    background-color: $very-light-blue;
+    color: $light-blue;
 }
 
 
@@ -48,7 +55,7 @@ button {
     background-color: white;
     margin-top: 33px;
     border-radius: 13px;
-    box-shadow: 0 50px 50px fade-out( #4B5C9A, 0.75); 
+    box-shadow: 0 50px 50px fade-out( $shadow, 0.75); 
     
     
     h2 {
@@ -56,13 +63,13 @@ button {
         padding-bottom: 54px;
         font-size: bold;
         font-weight: 700;
-        color: #333950;
+        color: $dark-blue;
     }
 
     .price {
         font-size: 56px;
         line-height: 1.4;
-        color: #333950;
+        color: $dark-blue;
     }
 
     li {
@@ -71,13 +78,49 @@ button {
 
     .details {
         margin-bottom: 68px;
-        color: #333950;
+        color: $dark-blue;
     }
 
     button {
         margin-top: 24px;
         margin-bottom: 40px;
     }
-    
+   
+}
+
+.timer {
+    padding: 100px 0;
+    color: white;
+    h2 {
+        
+        text-transform: uppercase;
+        letter-spacing: 5px;
+
+        em {
+            color: $light-blue;
+        }
+    }
+    ol {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 50px 0;
+
+        li {
+            display: block;
+            background-color: $dark-blue;
+            padding: 15px;
+            border-radius: 4px;
+            line-height: 1.5;
+
+            .num {
+                font-size: 32px;
+            }
+            .unit {
+                font-size: 12px;
+                opacity: 50%;
+            }
+        }
+    }
 }
 
