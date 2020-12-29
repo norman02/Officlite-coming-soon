@@ -128,4 +128,48 @@ button {
   margin-top: 24px;
   margin-bottom: 40px;
 }
+
+.timer {
+  padding: 100px 0;
+  color: white;
+}
+
+.timer h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.timer h2 em {
+  color: #5175FF;
+}
+
+.timer ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.timer ol li {
+  display: block;
+  background-color: #333950;
+  padding: 15px;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+.timer ol li .num {
+  font-size: 32px;
+}
+
+.timer ol li .unit {
+  font-size: 12px;
+  opacity: 50%;
+}
 /*# sourceMappingURL=main.css.map */
