@@ -1,15 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
 @import "layout/reset";
+@import "helpers/variables";
+@import 'helpers/mixins';
 
 
 
-$dark-blue: #333950;
-$light-blue: #5175FF;
-$light-gray: #747B95;
-$offwhite: #FAFAFA;
-$shadow:  #4B5C9A;
-$very-light-blue: #E5EAFF;
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
@@ -36,18 +32,10 @@ h1 {
     margin-bottom: 100px;
     button {
         margin-top: 62px;
+        @include button
     }
 }
 
-button {
-    outline: none;
-    border: none;
-    height: 56px;
-    width: 172px;
-    border-radius: 28px;
-    background-color: $very-light-blue;
-    color: $light-blue;
-}
 
 
 
@@ -82,13 +70,46 @@ button {
     }
 
     button {
+
         margin-top: 24px;
         margin-bottom: 40px;
     }
+
+    
    
 }
 
+.basic {
+    button {
+        @include button($light-blue, $very-light-blue);
+    }
+}
+
+.pro {
+    background-color: $light-blue;
+    color: white;
+    h2 {
+        color: white;
+    }
+    .price {
+        color: white;
+    }
+    .details {
+        color: white;
+    }
+    button {
+        @include button($light-blue, white);
+    }
+}
+
+.ultimate {
+    button {
+        @include button($light-blue, $very-light-blue);
+    }
+}
+
 .timer {
+    
     padding: 100px 0;
     color: white;
     h2 {
@@ -121,6 +142,10 @@ button {
                 opacity: 50%;
             }
         }
+    }
+
+    button {
+        @include button;
     }
 }
 

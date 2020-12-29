@@ -81,16 +81,13 @@ h1 {
 
 .intro button {
   margin-top: 62px;
-}
-
-button {
   outline: none;
   border: none;
   height: 56px;
   width: 172px;
   border-radius: 28px;
-  background-color: #E5EAFF;
-  color: #5175FF;
+  background-color: #5175FF;
+  color: white;
 }
 
 .plan {
@@ -127,6 +124,53 @@ button {
 .plan button {
   margin-top: 24px;
   margin-bottom: 40px;
+}
+
+.basic button {
+  outline: none;
+  border: none;
+  height: 56px;
+  width: 172px;
+  border-radius: 28px;
+  background-color: #E5EAFF;
+  color: #5175FF;
+}
+
+.pro {
+  background-color: #5175FF;
+  color: white;
+}
+
+.pro h2 {
+  color: white;
+}
+
+.pro .price {
+  color: white;
+}
+
+.pro .details {
+  color: white;
+}
+
+.pro button {
+  outline: none;
+  border: none;
+  height: 56px;
+  width: 172px;
+  border-radius: 28px;
+  background-color: white;
+  color: #5175FF;
+}
+
+.ultimate button {
+  outline: none;
+  border: none;
+  height: 56px;
+  width: 172px;
+  border-radius: 28px;
+  background-color: #E5EAFF;
+  color: #5175FF;
 }
 
 .timer {
@@ -171,5 +215,15 @@ button {
 .timer ol li .unit {
   font-size: 12px;
   opacity: 50%;
+}
+
+.timer button {
+  outline: none;
+  border: none;
+  height: 56px;
+  width: 172px;
+  border-radius: 28px;
+  background-color: #5175FF;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
