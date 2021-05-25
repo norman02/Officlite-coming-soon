@@ -1,19 +1,11 @@
+@import 'abstracts/variables';
 @import 'abstracts/functions';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
 
 @import 'base/reset';
+@import 'base/typography';
 
 @import 'layouts/header';
 
-
-
-
-
-main {
-    display: none;
-
-
-}
-
-footer {
-    display: none;
-}
+@import 'pages/home';

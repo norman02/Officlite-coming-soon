@@ -1,0 +1,32 @@
+body {
+    background: $off-white;
+}
+
+.cta {
+
+    text-align: center;
+    margin: 0 6.4%;
+    
+    .img-cont {
+        display: block;
+        width: toRem(171);
+        height: toRem(192);
+        margin: toRem(-192) auto toRem(64) auto;
+        background-image: url('../assets/home/illustration-charts.svg');
+        background-size: contain;
+        background-repeat: no-repeat
+    }
+
+    h1 {
+        @include font(40, 48, 700);
+        color: $heading-color;
+    }
+
+    p {
+        @include font(16, 26, 400);
+        color: $text-color;
+        margin-top: toRem(32);
+        margin-bottom: toRem(48);
+    }
+
+}
