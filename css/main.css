@@ -19,4 +19,26 @@ body {
 ol, ul {
   list-style: none;
 }
+
+header {
+  width: 100%;
+  height: 18rem;
+  background-image: url("../assets/home/bg-pattern-header.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -9rem;
+}
+
+header .logo {
+  display: block;
+  margin: 3.10312rem auto 0 auto;
+}
+
+main {
+  display: none;
+}
+
+footer {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
