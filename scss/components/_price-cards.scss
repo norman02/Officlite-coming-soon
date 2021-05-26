@@ -1,0 +1,71 @@
+.price-card {
+    padding-top: toRem(40);
+    width: toRem(327); 
+    display: block;
+    background-color: #FFFFFF;
+    box-shadow: 0px 50px 50px #4B5C9A3F;
+    border-radius: 13px;
+    opacity: 1;
+    text-align: center;
+
+    h2 {
+        @include font(20, 28, 700);
+        color: $heading-color;     
+    }
+
+    ul {
+        margin-top: toRem(48);
+
+        li {
+            @include font(16, 28, 400);
+            color: $text-color;
+            margin-bottom: toRem(28);
+        }
+
+        li:first-child {
+            @include font(56, 64, 700);
+            color: $heading-color;
+        }
+
+        li:nth-child(2) {  
+            color: $heading-color;
+            margin-top: toRem(16);
+            margin-bottom: toRem(68);
+        }
+   
+    }
+
+    .btn {
+        @include button($soft-blue, $blue);
+        margin-top: toRem(24);
+        margin-bottom: toRem(40);
+    }
+
+}
+
+.pro {
+    background-color: $blue;
+    background-image: url('../assets/home/bg-pattern-pricing.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center toRem(-254);
+
+    
+    h2 {
+        color: white;
+    }
+
+    ul {
+        li{
+            color: white;
+        }
+
+        li:first-child {
+            color: white;
+        }
+
+        li:nth-child(2) {
+            color: white;
+        }
+    }
+}
