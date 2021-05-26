@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
 
   <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
@@ -13,15 +14,17 @@
 <body>
 
   <header>
-    <img src="./assets/shared/logo.svg" alt="Officelite">
-    <div class="img-cont">
-      <img src="./assets/home/illustration-charts.svg" alt="">
-    </div>
+    <img class='logo' src="./assets/shared/logo.svg" alt="Officelite">
+
 
   </header>
   <main>
 
     <section class="cta">
+
+      <div class="img-cont">
+      </div>
+
       <h1>A simple solution to complex tasks is coming soon</h1>
 
       <p>
@@ -29,7 +32,7 @@
         collaboration platform built with an intuitive interface to improve productivity.
       </p>
 
-      <button aria-label="get started">Get Started</button>
+      <button class='btn btn--blue' aria-label="get started">Get Started</button>
 
     </section>
 
@@ -47,7 +50,7 @@
           <li></li>
         </ul>
 
-        <button aria-label="try for free">Try for Free</button>
+        <button class='btn' aria-label="try for free">Try for Free</button>
 
       </div>
 
@@ -61,7 +64,7 @@
           <li>More control and insights</li>
         </ul>
 
-        <button aria-label="try for free">Try for Free</button>
+        <button class='btn' aria-label="try for free">Try for Free</button>
 
       </div>
 
@@ -76,8 +79,8 @@
 
         </ul>
 
-        <button aria-label="try for free">Try for Free</button>
-        
+        <button class='btn' aria-label="try for free">Try for Free</button>
+
       </div>
 
     </section>
@@ -85,17 +88,42 @@
   </main>
 
   <footer>
+    <div class="content-container">
 
-    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-    Coming 4 Nov 2020
+      <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+      <div class="date-cont">
+        <p>
+          Coming
+          <span class="date">4 Nov 2020</span>
+        </p>
+      </div>
 
-    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-    47 Days
-    07 Hours
-    56 Min
-    14 Sec
-    Get Started
 
+      <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+
+      <div class="countdown">
+        <div class="timer-card">
+          <h2>47</h2>
+          <p>Days</p>
+        </div>
+        <div class="timer-card">
+          <h2>07</h2>
+          <p>Hours</p>
+        </div>
+        <div class="timer-card">
+          <h2>56</h2>
+          <p>Min</p>
+        </div>
+        <div class="timer-card">
+          <h2>14</h2>
+          <p>Sec</p>
+        </div>
+        
+      </div>
+
+      <button aria-label="get started">Get Started</button>
+
+    </div>
   </footer>
 
 

@@ -1,0 +1,13 @@
+header {
+    width: 100%;
+    height: toRem(288);
+    background-image: url('../assets/home/bg-pattern-header.svg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 toRem(-144);
+
+    .logo {
+        display: block;
+        margin: toRem(49.65) auto 0 auto;
+    }
+}

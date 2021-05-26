@@ -1,0 +1,14 @@
+@mixin font ($size, $line-height, $weight) {
+    font-size: toRem($size);
+    line-height: toRem($line-height);
+    font-weight: $weight;
+}
+
+@mixin button ($bg-color, $color) {
+    @include font(16, 28, 700);
+    width: toRem(171);
+    height: toRem(56);
+    border-radius: 28px;
+    background-color: $bg-color;
+    color: $color;
+}

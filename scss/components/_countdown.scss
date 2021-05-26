@@ -1,0 +1,23 @@
+.countdown {
+    display: flex;
+    justify-content: space-evenly;
+
+    .timer-card {
+        width: toRem(72);
+        height: toRem(92);
+        border-radius: 4px;
+        background-color: hsla(228, 22%, 26%, 1);
+        color: white;
+        text-align: center;
+
+        h2 {
+            @include font(32, 32, 700);
+            margin-top: toRem(16);
+        }
+
+        p {
+            @include font(12, 28, 700);
+            opacity: 0.5;
+        }
+    }
+}
