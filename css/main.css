@@ -174,4 +174,35 @@ body {
   margin: 0 auto;
   margin-bottom: 2rem;
 }
+
+.pricing {
+  display: none;
+}
+
+footer {
+  height: 100vh;
+  background-color: #262a3b;
+}
+
+footer .content-container {
+  padding-top: 6.25rem;
+  background-image: url("../assets/home/bg-pattern-footer.svg");
+  background-size: 767px;
+  background-repeat: no-repeat;
+  background-position: center -380px;
+  text-align: center;
+}
+
+footer .date-cont {
+  font-size: 1rem;
+  line-height: 3rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: white;
+}
+
+footer .date-cont .span {
+  color: #5274ff;
+}
 /*# sourceMappingURL=main.css.map */
