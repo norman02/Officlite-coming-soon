@@ -1,4 +1,6 @@
 .price-card {
+    position: relative;
+    z-index: 5;
     padding-top: toRem(40);
     width: toRem(327); 
     display: block;

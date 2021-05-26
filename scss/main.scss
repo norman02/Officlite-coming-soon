@@ -7,37 +7,9 @@
 @import 'base/typography';
 
 @import 'components/price-cards';
+@import 'components/countdown';
 
 @import 'layouts/header';
+@import 'layouts/footer';
 
 @import 'pages/home';
-
-.pricing {
-    display: none;
-}
-
-footer {
-    height: 100vh;
-    background-color: hsla(229, 22%, 19%, 1);  
-
-  .content-container {
-      padding-top: toRem(100);
-      background-image: url('../assets/home/bg-pattern-footer.svg');
-      background-size: 767px;
-      background-repeat: no-repeat;
-      background-position: center -380px;
-      text-align: center;
-
-  }
-
-  .date-cont {
-      @include font(16, 48, 700);
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      color: white;
-
-      .span {
-          color: hsla(228, 100%, 66%, 1);
-      }
-  }
-}

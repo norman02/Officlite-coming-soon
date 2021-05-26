@@ -1,0 +1,39 @@
+footer {
+    padding-top: 100vh;
+    margin-top: -100vh;
+    background-color: hsla(229, 22%, 19%, 1);  
+
+  .content-container {
+      position: relative;
+      bottom: 0;
+      margin-top: toRem(-50);
+      padding-top: toRem(100);
+      padding-bottom: toRem(100);
+      background-image: url('../assets/home/bg-pattern-footer.svg');
+      background-size: 767px;
+      background-repeat: no-repeat;
+      background-position: center -380px;
+      text-align: center;
+
+  }
+
+  .date-cont {
+      @include font(16, 48, 700);
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: white;
+
+      .date {
+          color: hsla(228, 100%, 66%, 1);
+      }
+  }
+  
+  .countdown {
+    margin-top: toRem(50);
+    margin-bottom: toRem(40);
+  }
+
+  button {
+      @include button($blue, white);
+  }
+}
