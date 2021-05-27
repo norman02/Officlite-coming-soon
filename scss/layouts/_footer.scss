@@ -33,7 +33,4 @@ footer {
     margin-bottom: toRem(40);
   }
 
-  button {
-      @include button($blue, white);
-  }
 }
