@@ -1,0 +1,58 @@
+.btn {
+    @include font(16, 28, 700);
+    width: toRem(171);
+    height: toRem(56);
+    border-radius: 28px;
+    transition: 0.7s;
+
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline:none;
+        border: 4px solid $dark-blue;
+    }
+    
+}
+
+.btn--blue {
+    background-color: $blue;
+    color: white;
+    
+    &:hover {
+        background-color: $light-blue;
+        color: white;
+    }
+
+    &:focus {
+        background-color: $light-blue;
+        color: white;
+    }
+}
+
+.btn--white {
+    background-color: white;
+    color: $blue;
+
+    &:focus {
+        background-color: $dark-blue;
+    }
+}
+
+.btn--soft {
+    background-color: $soft-blue;
+    color: $blue;
+
+    &:hover {
+        background-color: hsla(228, 100%, 66%, 0.35);
+    }
+    &:focus {
+        background-color: hsla(228, 100%, 66%, 0.35);
+    }
+}
+
+.btn--dark {
+    &:focus {
+        border: 4px solid white;
+    }
+}

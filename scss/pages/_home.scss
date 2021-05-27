@@ -30,7 +30,6 @@ body {
     }
 
     button {
-        @include button($blue, white );
         box-shadow: 0px 25px 25px $dark-gray-blue;
     }
 

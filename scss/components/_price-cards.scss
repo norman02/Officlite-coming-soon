@@ -38,7 +38,6 @@
     }
 
     .btn {
-        @include button($soft-blue, $blue);
         margin-top: toRem(24);
         margin-bottom: toRem(40);
     }
