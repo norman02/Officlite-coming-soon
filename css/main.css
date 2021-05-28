@@ -25,6 +25,20 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: #333950;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+  color: #747B95;
+}
+
 .btn {
   font-size: 1rem;
   line-height: 1.75rem;
@@ -257,18 +271,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.cta h1 {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  font-weight: 700;
-  color: #333950;
-}
-
 .cta p {
-  font-size: 1rem;
-  line-height: 1.625rem;
-  font-weight: 400;
-  color: #747B95;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }

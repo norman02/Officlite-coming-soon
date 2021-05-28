@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
-    <title>Frontend Mentor | Officelite coming soon site</title>
+  <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
+
 <body>
-  Work smarter. Save time.
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+  <header>
+    <img class='logo' src="./assets/shared/logo.svg" alt="Officelite">
+  </header>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+  <main>
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
+    <section class="top">
 
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
+      <h1>Work smarter. Save time.</h1>
+
+
+      Easily manage your projects. Get on the list and receive in-app perks available only to
+      early subscribers. We are moving into final development and getting ready for official launch soon.
+    </section>
+
+
+    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+    <div class="date-cont">
+      <p>
+        Coming
+        <span class="date">4 Nov 2020</span>
+      </p>
+    </div>
+
+
+    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+
+    <div class="countdown">
+      <div class="timer-card">
+        <h2>47</h2>
+        <p>Days</p>
+      </div>
+      <div class="timer-card">
+        <h2>07</h2>
+        <p>Hours</p>
+      </div>
+      <div class="timer-card">
+        <h2>56</h2>
+        <p>Min</p>
+      </div>
+      <div class="timer-card">
+        <h2>14</h2>
+        <p>Sec</p>
+      </div>
+
+    </div>
+
+    <form action="">
+      <input type="text" placeholder="Name">
+      <input type="email" name="email" id="" placeholder="email">
+      <select name="" id="">
+        <option value="Free">Free</option>
+        <option value="Pro">Pro</option>
+        <option value="Ultimate">Ultimate</option>
+      </select>
+      <input type="number" name="" id="" placeholder="Phone Number">
+      <input type="text" name="" id="" placeholder="Company">
+    </form>
+
+    
+
+  </main>
 </body>
+
 </html>
