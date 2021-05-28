@@ -1,0 +1,10 @@
+.date-cont {
+    @include font(16, 48, 700);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+
+    .date {
+        color: hsla(228, 100%, 66%, 1);
+    }
+}
