@@ -1,0 +1,82 @@
+.sign-up {
+
+    main {
+        margin: 0 6.4%;
+    }
+    
+    .top {
+        text-align: center;
+        
+        margin: toRem(-160) auto toRem(64) auto;
+
+        h1 {
+            max-width: toRem(327);
+            margin: 0 auto;
+        }
+
+        p {
+            margin: 0 auto;
+            margin-top: toRem(16);
+            max-width: toRem(327);
+        }
+    }
+
+    .date-cont {
+        text-align: center;
+    }
+
+    .countdown {
+        margin-top: toRem(50);
+
+        .timer-card {
+            background-color: $soft-blue;
+
+            h2 {
+                color: $blue;
+            }
+        }
+    }
+
+    form {
+        position: relative;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        padding: toRem(24);
+        margin: 0 auto;
+        margin-top: toRem(64);
+        max-width: toRem(327);
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 50px 50px #4B5C9A3F;
+        border-radius: 13px;
+
+        input, select {
+            padding-top: toRem(24);
+            padding-bottom: toRem(29);
+            border-bottom: 1px solid hsla(227, 13%, 52%, 0.5);
+            outline: none;
+
+            &:focus {
+                border: 2px solid $blue;
+            }
+        }
+
+        button {
+            position: relative;
+            margin-top: toRem(40);
+            width: 100%;
+        }
+    }
+
+    .footer {
+        margin-top: toRem(-150);
+        width: 100vw;
+        height: toRem(327);
+        background-color: hsla(229, 22%, 19%, 1);
+        background-image: url('../../assets/home/bg-pattern-footer.svg');
+        background-size: cover;
+        background-position: center toRem(-50);
+        background-repeat: no-repeat;
+    }
+
+}

@@ -11,7 +11,7 @@
   <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
 
-<body>
+<body class="sign-up">
 
   <header>
     <img class='logo' src="./assets/shared/logo.svg" alt="Officelite">
@@ -23,14 +23,16 @@
 
       <h1>Work smarter. Save time.</h1>
 
-
-      Easily manage your projects. Get on the list and receive in-app perks available only to
-      early subscribers. We are moving into final development and getting ready for official launch soon.
+      <p>
+        Easily manage your projects. Get on the list and receive in-app perks available only to
+        early subscribers. We are moving into final development and getting ready for official launch soon.
+      </p>
+      
     </section>
 
 
     <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-    <div class="date-cont">
+    <div class="date-cont ">
       <p>
         Coming
         <span class="date">4 Nov 2020</span>
@@ -61,20 +63,26 @@
     </div>
 
     <form action="">
-      <input type="text" placeholder="Name">
-      <input type="email" name="email" id="" placeholder="email">
-      <select name="" id="">
-        <option value="Free">Free</option>
-        <option value="Pro">Pro</option>
-        <option value="Ultimate">Ultimate</option>
+      <input aria-label="Name" type="text" placeholder="Name">
+      <input aria-label='email' type="email" name="email" id="" placeholder="email">
+      <select aria-label='select plan' name="" id="">
+        <option aria-label='free' value="Free">Free</option>
+        <option aria-label='pro' value="Pro">Pro</option>
+        <option aria-label='ultimate' value="Ultimate">Ultimate</option>
       </select>
-      <input type="number" name="" id="" placeholder="Phone Number">
-      <input type="text" name="" id="" placeholder="Company">
+      <input aria-label='phone' type="number" name="" id="" placeholder="Phone Number">
+      <input aria-label='company' type="text" name="" id="" placeholder="Company">
+      <button class="btn btn--blue" aria-label='Get on the list'>Get on the list</button>
     </form>
+
+   
 
     
 
   </main>
+  <div class="footer">
+
+  </div>
 </body>
 
 </html>
