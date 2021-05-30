@@ -1,4 +1,5 @@
 header {
+    border: 2px solid transparent;
     width: 100%;
     height: toRem(288);
     background-image: url('../assets/home/bg-pattern-header.svg'); 
@@ -10,4 +11,34 @@ header {
         display: block;
         margin: toRem(49.65) auto 0 auto;
     }
+
+    @include media-md {
+        height: toRem(666);
+        background-position: toRem(395) toRem(-164);
+
+        .logo {
+            margin: toRem(72) 0 0 toRem(54);
+        }
+    }
+
+    @include media-lg {
+        height: 1134px;
+        background-position: toRem(656) toRem(-419);
+
+        .logo {
+            margin: toRem(84.65) 0 0 toRem(219);
+        }
+    }
+
+    @include media-xl {
+        max-width: 1600px;
+        margin: 0 auto;
+        background-size: auto;
+
+        .logo {
+            // margin: toRem(84.65) 0 0 0;
+        }
+    }
+
+
 }
