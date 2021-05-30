@@ -1,7 +1,9 @@
 .btn {
     @include font(16, 28, 700);
+    display: inline-block;
     width: toRem(171);
-    height: toRem(56);
+    padding-top: toRem(14);
+    padding-bottom: toRem(14);
     border-radius: 28px;
     transition: 0.7s;
 
