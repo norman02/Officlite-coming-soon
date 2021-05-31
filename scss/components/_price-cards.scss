@@ -10,13 +10,46 @@
     opacity: 1;
     text-align: center;
 
+    @include media-md {
+        width: 85.54%;
+        text-align: left;
+    }
+
+    @include media-lg {
+        width: toRem(350);
+        text-align: center;
+    }
+
     h2 {
         @include font(20, 28, 700);
-        color: $heading-color;     
+        color: $heading-color; 
+        
+        @include media-md {
+            margin-top: toRem(48);
+            margin-left: toRem(48);
+        }
+
+        @include media-lg {
+            margin: 0;
+            margin-top: toRem(40);
+        }
     }
 
     ul {
         margin-top: toRem(48);
+
+        @include media-md {
+            margin-top: toRem(24);
+            margin-left: toRem(48);
+            display: grid;
+            grid-template-areas: "first three" "first four" "second five"
+        }
+
+        @include media-lg {
+            margin-top: toRem(48);
+            margin-left: 0;
+            display: block;
+        }
 
         li {
             @include font(16, 28, 400);
@@ -27,12 +60,31 @@
         li:first-child {
             @include font(56, 64, 700);
             color: $heading-color;
+            grid-area: first;
         }
 
         li:nth-child(2) {  
             color: $heading-color;
             margin-top: toRem(16);
             margin-bottom: toRem(68);
+            grid-area: second;
+
+            @include media-md {
+                margin: 0;
+                margin-top: toRem(-24);
+            }
+        }
+
+        li:nth-child(3) {
+            grid-area: three;
+        }
+
+        li:nth-child(4) {
+            grid-area: four;
+        }
+
+        li:nth-child(5) {
+            grid-area: five;
         }
    
     }
@@ -40,6 +92,15 @@
     .btn {
         margin-top: toRem(24);
         margin-bottom: toRem(40);
+
+        @include media-md {
+            margin-top: toRem(36);
+            margin-left: toRem(48);
+        }
+
+        @include media-lg {
+            margin-left: 0;
+        }
     }
 
 }

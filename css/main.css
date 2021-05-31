@@ -131,6 +131,20 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 700px) {
+  .price-card {
+    width: 85.54%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price-card {
+    width: 21.875rem;
+    text-align: center;
+  }
+}
+
 .price-card h2 {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -138,8 +152,39 @@ p {
   color: #333950;
 }
 
+@media screen and (min-width: 700px) {
+  .price-card h2 {
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price-card h2 {
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+}
+
 .price-card ul {
   margin-top: 3rem;
+}
+
+@media screen and (min-width: 700px) {
+  .price-card ul {
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    display: grid;
+    grid-template-areas: "first three" "first four" "second five";
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price-card ul {
+    margin-top: 3rem;
+    margin-left: 0;
+    display: block;
+  }
 }
 
 .price-card ul li {
@@ -155,17 +200,51 @@ p {
   line-height: 4rem;
   font-weight: 700;
   color: #333950;
+  grid-area: first;
 }
 
 .price-card ul li:nth-child(2) {
   color: #333950;
   margin-top: 1rem;
   margin-bottom: 4.25rem;
+  grid-area: second;
+}
+
+@media screen and (min-width: 700px) {
+  .price-card ul li:nth-child(2) {
+    margin: 0;
+    margin-top: -1.5rem;
+  }
+}
+
+.price-card ul li:nth-child(3) {
+  grid-area: three;
+}
+
+.price-card ul li:nth-child(4) {
+  grid-area: four;
+}
+
+.price-card ul li:nth-child(5) {
+  grid-area: five;
 }
 
 .price-card .btn {
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .price-card .btn {
+    margin-top: 2.25rem;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price-card .btn {
+    margin-left: 0;
+  }
 }
 
 .pro {
@@ -248,7 +327,7 @@ header .logo {
   margin: 3.10312rem auto 0 auto;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   header {
     height: 41.625rem;
     background-position: 24.6875rem -10.25rem;
@@ -309,7 +388,7 @@ body {
   margin: 0 7.03%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .cta {
     margin-top: -23.4375rem;
     display: flex;
@@ -336,7 +415,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .cta .img-cont {
     flex: 1;
     margin: 0;
@@ -347,7 +426,7 @@ body {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .cta .content-container {
     text-align: left;
     flex: 1;
@@ -359,7 +438,7 @@ body {
   margin-bottom: 3rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .cta .content-container p {
     margin-top: 2rem;
     margin-bottom: 2.125rem;
@@ -380,7 +459,7 @@ body {
   margin-top: 6.25rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .pricing {
     margin-top: 8.75rem;
   }
@@ -388,7 +467,11 @@ body {
 
 @media screen and (min-width: 1200px) {
   .pricing {
+    width: 85.54%;
+    margin: auto;
     margin-top: 11.5rem;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -397,7 +480,7 @@ body {
   margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .pricing .price-card {
     margin-bottom: 1.5rem;
   }
