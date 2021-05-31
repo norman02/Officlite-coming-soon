@@ -1,6 +1,11 @@
 .countdown {
     display: flex;
     justify-content: space-evenly;
+    
+    @include media-md {
+        margin: auto;
+        max-width: toRem(448);
+    }
 
     .timer-card {
         width: toRem(72);
@@ -10,14 +15,29 @@
         color: white;
         text-align: center;
 
+        @include media-md{
+            width: toRem(100);
+            height: toRem(128);
+            
+        }
+
         h2 {
             @include font(32, 32, 700);
             margin-top: toRem(16);
+
+            @include media-md {
+                @include font(56, 68, 700);
+                margin-top: toRem(16.2);
+            }
         }
 
         p {
             @include font(12, 28, 700);
             opacity: 0.5;
+
+            @include media-md {
+                @include font(16, 28, 700);
+            }
         }
     }
 }

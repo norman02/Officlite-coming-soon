@@ -289,6 +289,13 @@ p {
   justify-content: space-evenly;
 }
 
+@media screen and (min-width: 700px) {
+  .countdown {
+    margin: auto;
+    max-width: 28rem;
+  }
+}
+
 .countdown .timer-card {
   width: 4.5rem;
   height: 5.75rem;
@@ -298,6 +305,13 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 700px) {
+  .countdown .timer-card {
+    width: 6.25rem;
+    height: 8rem;
+  }
+}
+
 .countdown .timer-card h2 {
   font-size: 2rem;
   line-height: 2rem;
@@ -305,11 +319,28 @@ p {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 700px) {
+  .countdown .timer-card h2 {
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+    margin-top: 1.0125rem;
+  }
+}
+
 .countdown .timer-card p {
   font-size: 0.75rem;
   line-height: 1.75rem;
   font-weight: 700;
   opacity: 0.5;
+}
+
+@media screen and (min-width: 700px) {
+  .countdown .timer-card p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
 }
 
 header {
@@ -361,6 +392,24 @@ footer {
   background-color: #262a3b;
 }
 
+@media screen and (min-width: 700px) {
+  footer {
+    padding-top: 37.5rem;
+    margin-top: -37.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    padding-top: 18.75rem;
+    margin-top: -18.75rem;
+    background-image: url("../assets/home/bg-pattern-footer.svg");
+    background-size: 2036px;
+    background-position: -43.875rem center;
+    background-repeat: no-repeat;
+  }
+}
+
 footer .content-container {
   position: relative;
   bottom: 0;
@@ -372,6 +421,25 @@ footer .content-container {
   background-repeat: no-repeat;
   background-position: center -380px;
   text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  footer .content-container {
+    background-size: 588px;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  footer .content-container {
+    margin-left: 11.46%;
+    margin-right: 11.46%;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+  }
 }
 
 footer .countdown {
