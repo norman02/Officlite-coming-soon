@@ -74,7 +74,11 @@ body {
     }
 
     @include media-lg {
+        width: 85.54%;
+        margin: auto;
         margin-top: toRem(184);
+        display: flex;
+        justify-content: center;
     }
 
     .price-card {
