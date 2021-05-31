@@ -289,6 +289,13 @@ p {
   justify-content: space-evenly;
 }
 
+@media screen and (min-width: 700px) {
+  .countdown {
+    margin: auto;
+    max-width: 28rem;
+  }
+}
+
 .countdown .timer-card {
   width: 4.5rem;
   height: 5.75rem;
@@ -298,6 +305,13 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 700px) {
+  .countdown .timer-card {
+    width: 6.25rem;
+    height: 8rem;
+  }
+}
+
 .countdown .timer-card h2 {
   font-size: 2rem;
   line-height: 2rem;
@@ -305,11 +319,28 @@ p {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 700px) {
+  .countdown .timer-card h2 {
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+    margin-top: 1.0125rem;
+  }
+}
+
 .countdown .timer-card p {
   font-size: 0.75rem;
   line-height: 1.75rem;
   font-weight: 700;
   opacity: 0.5;
+}
+
+@media screen and (min-width: 700px) {
+  .countdown .timer-card p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
 }
 
 header {
