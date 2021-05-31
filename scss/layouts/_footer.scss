@@ -1,7 +1,21 @@
 footer {
     padding-top: 100vh;
     margin-top: -100vh;
-    background-color: hsla(229, 22%, 19%, 1);  
+    background-color: hsla(229, 22%, 19%, 1);
+    
+    @include media-md {
+      padding-top: toRem(600);
+      margin-top: toRem(-600);
+    }
+
+    @include media-lg {
+      padding-top: toRem(300);
+      margin-top: toRem(-300);
+      background-image: url('../assets/home/bg-pattern-footer.svg');
+      background-size: 2036px;
+      background-position: toRem(-702) center;
+      background-repeat: no-repeat;
+    }
 
   .content-container {
       position: relative;
@@ -14,6 +28,21 @@ footer {
       background-repeat: no-repeat;
       background-position: center -380px;
       text-align: center;
+
+      @include media-md {
+        background-size: 588px;
+        background-position: center;
+      }
+
+      @include media-md {
+        margin-left: 11.46%;
+        margin-right: 11.46%;
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+      }
 
   }
 
