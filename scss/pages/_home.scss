@@ -5,7 +5,20 @@ body {
 .cta {
 
     text-align: center;
-    margin: 0 6.4%;
+    margin: 0 7.03%;
+
+    @include media-md {
+        margin-top: toRem(-375);
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include media-lg {
+        margin-top: toRem(-800);
+        margin-left: 11.46%;
+    }
     
     .img-cont {
         display: block;
@@ -14,25 +27,68 @@ body {
         margin: toRem(-192) auto toRem(64) auto;
         background-image: url('../assets/home/illustration-charts.svg');
         background-size: contain;
-        background-repeat: no-repeat
+        background-repeat: no-repeat;
+
+        @include media-md {
+            flex: 1;
+            margin: 0;
+            width: 500px;
+            height: 500px;
+            background-position: center;
+            background-size: contain;
+        } 
     }
 
-    p{
-        margin-top: toRem(32);
-        margin-bottom: toRem(48);
-    }
+    .content-container {
 
-    button {
-        box-shadow: 0px 25px 25px $dark-gray-blue;
-    }
+        @include media-md {
+            text-align: left;
+            flex: 1;
+        }
 
+        p{
+            margin-top: toRem(32);
+            margin-bottom: toRem(48);
+
+            @include media-md {
+                margin-top: toRem(32);
+                margin-bottom: toRem(34);
+            }
+
+            @include media-lg {
+               margin-bottom: toRem(41); 
+            }
+        }
+
+        button {
+            box-shadow: 0px 25px 25px $dark-gray-blue;
+        } 
+    }
 }
 
 .pricing {
     margin-top: toRem(100);
 
+    @include media-md {
+        margin-top: toRem(140);
+    }
+
+    @include media-lg {
+        margin-top: toRem(184);
+    }
+
     .price-card {
         margin: 0 auto;
         margin-bottom: toRem(32);
+
+        @include media-md {
+            margin-bottom: toRem(24);
+        }
+
+        @include media-lg {
+            margin-bottom: toRem(82);
+        }
     }
+
+    
 }
