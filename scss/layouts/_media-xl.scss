@@ -1,0 +1,10 @@
+@include media-xl {
+    body,
+    header,
+    main,
+    footer {
+        max-width: 2000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
