@@ -286,13 +286,13 @@ p {
 
 .countdown {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 @media screen and (min-width: 700px) {
   .countdown {
     margin: auto;
-    max-width: 28rem;
+    max-width: 31.25rem;
   }
 }
 
@@ -300,6 +300,7 @@ p {
   width: 4.5rem;
   height: 5.75rem;
   border-radius: 4px;
+  margin-right: 1rem;
   background-color: #343a51;
   color: white;
   text-align: center;
