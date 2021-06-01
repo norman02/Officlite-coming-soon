@@ -1,32 +1,108 @@
 .sign-up {
 
+    @include media-lg {
+        display: grid;
+        grid-template-areas: 'head foot' 'main foot' 'main foot';
+    }
+
+    header {
+        @include media-md {
+            background: none;
+            height: toRem(206);
+        }
+
+        @include media-lg {
+            width: 70vw;
+            grid-area: head;
+        }
+    }
+
     main {
         margin: 0 6.4%;
+        @include media-lg {
+            margin: 0;
+            grid-area: main;
+            display: grid;
+            grid-template-areas: 'h1 form' 'p form' 'date form' 'countdown form' '. form' '. form';
+            column-gap: 0;
+            row-gap: 0;
+            width: 100vw;
+            margin-left: 11.46%;
+            margin-right: -30vw;
+            height: toRem(508);
+        }
     }
     
     .top {
         text-align: center;
-        
         margin: toRem(-160) auto toRem(64) auto;
+
+        @include media-md {
+            margin: 0;
+        }
+
 
         h1 {
             max-width: toRem(327);
             margin: 0 auto;
+            grid-area: h1;
+            @include media-md {
+                max-width: toRem(573);
+            }
+
+            @include media-lg {
+                margin: 0;
+                max-width: toRem(540);
+                text-align: left;
+            }
         }
 
         p {
             margin: 0 auto;
             margin-top: toRem(16);
             max-width: toRem(327);
+            grid-area: p;
+
+            @include media-md {
+                margin-top: toRem(32);
+                max-width: toRem(572);
+            }
+
+            @include media-lg {
+                margin: toRem(32) 0 0 0;
+                max-width: toRem(450);
+                text-align: left;
+            }
         }
     }
 
     .date-cont {
         text-align: center;
+        grid-area: date;
+        @include media-md {
+            margin-top: toRem(50);
+        }
+
+        @include media-lg {
+            margin: 0;
+            text-align: left;
+        }
     }
 
     .countdown {
         margin-top: toRem(50);
+        grid-area: countdown;
+        @include media-md {
+            margin-top: toRem(40);
+        }
+
+        @include media-lg {
+            margin: 0;
+            margin-top: toRem(40);
+            justify-content: left;
+            width: toRem(540);
+            justify-content: space-between;
+        }
 
         .timer-card {
             background-color: $soft-blue;
@@ -38,6 +114,7 @@
     }
 
     form {
+        grid-area: form;
         position: relative;
         z-index: 5;
         display: flex;
@@ -49,6 +126,18 @@
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 50px 50px #4B5C9A3F;
         border-radius: 13px;
+
+        @include media-md {
+            margin-top: toRem(104);
+            max-width: 57.94%;
+        }
+
+        @include media-lg {
+            margin: 0;
+            max-width: 100%;
+            width: toRem(445);
+            height: toRem(508);
+        }
 
         input, select {
             padding-top: toRem(24);
@@ -73,10 +162,23 @@
         width: 100vw;
         height: toRem(327);
         background-color: hsla(229, 22%, 19%, 1);
-        background-image: url('../../assets/home/bg-pattern-footer.svg');
+        background-image: url('../assets/home/bg-pattern-footer.svg');
         background-size: cover;
         background-position: center toRem(-50);
         background-repeat: no-repeat;
+
+        @include media-md {
+            margin-top: toRem(-225);
+            height: toRem(377);
+            background-position: center;
+        }
+
+        @include media-lg {
+            margin: 0;
+            height: 125vh;
+            width: 30vw;
+            grid-area: foot;
+        }
     }
 
 }

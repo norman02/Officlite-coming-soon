@@ -447,6 +447,17 @@ footer .countdown {
   margin-bottom: 2.5rem;
 }
 
+@media screen and (min-width: 1600px) {
+  body,
+  header,
+  main,
+  footer {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 body {
   background: #FAFAFA;
 }
@@ -560,8 +571,44 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .sign-up {
+    display: grid;
+    grid-template-areas: 'head foot' 'main foot' 'main foot';
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .sign-up header {
+    background: none;
+    height: 12.875rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up header {
+    width: 70vw;
+    grid-area: head;
+  }
+}
+
 .sign-up main {
   margin: 0 6.4%;
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up main {
+    margin: 0;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 'h1 form' 'p form' 'date form' 'countdown form' '. form' '. form';
+    column-gap: 0;
+    row-gap: 0;
+    width: 100vw;
+    margin-left: 11.46%;
+    margin-right: -30vw;
+    height: 31.75rem;
+  }
 }
 
 .sign-up .top {
@@ -569,23 +616,91 @@ body {
   margin: -10rem auto 4rem auto;
 }
 
+@media screen and (min-width: 700px) {
+  .sign-up .top {
+    margin: 0;
+  }
+}
+
 .sign-up .top h1 {
   max-width: 20.4375rem;
   margin: 0 auto;
+  grid-area: h1;
+}
+
+@media screen and (min-width: 700px) {
+  .sign-up .top h1 {
+    max-width: 35.8125rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up .top h1 {
+    margin: 0;
+    max-width: 33.75rem;
+    text-align: left;
+  }
 }
 
 .sign-up .top p {
   margin: 0 auto;
   margin-top: 1rem;
   max-width: 20.4375rem;
+  grid-area: p;
+}
+
+@media screen and (min-width: 700px) {
+  .sign-up .top p {
+    margin-top: 2rem;
+    max-width: 35.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up .top p {
+    margin: 2rem 0 0 0;
+    max-width: 28.125rem;
+    text-align: left;
+  }
 }
 
 .sign-up .date-cont {
   text-align: center;
+  grid-area: date;
+}
+
+@media screen and (min-width: 700px) {
+  .sign-up .date-cont {
+    margin-top: 3.125rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up .date-cont {
+    margin: 0;
+    text-align: left;
+  }
 }
 
 .sign-up .countdown {
   margin-top: 3.125rem;
+  grid-area: countdown;
+}
+
+@media screen and (min-width: 700px) {
+  .sign-up .countdown {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up .countdown {
+    margin: 0;
+    margin-top: 2.5rem;
+    justify-content: left;
+    width: 33.75rem;
+    justify-content: space-between;
+  }
 }
 
 .sign-up .countdown .timer-card {
@@ -597,6 +712,7 @@ body {
 }
 
 .sign-up form {
+  grid-area: form;
   position: relative;
   z-index: 5;
   display: flex;
@@ -608,6 +724,22 @@ body {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 50px 50px #4B5C9A3F;
   border-radius: 13px;
+}
+
+@media screen and (min-width: 700px) {
+  .sign-up form {
+    margin-top: 6.5rem;
+    max-width: 57.94%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up form {
+    margin: 0;
+    max-width: 100%;
+    width: 27.8125rem;
+    height: 31.75rem;
+  }
 }
 
 .sign-up form input, .sign-up form select {
@@ -632,9 +764,26 @@ body {
   width: 100vw;
   height: 20.4375rem;
   background-color: #262a3b;
-  background-image: url("../../assets/home/bg-pattern-footer.svg");
+  background-image: url("../assets/home/bg-pattern-footer.svg");
   background-size: cover;
   background-position: center -3.125rem;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 700px) {
+  .sign-up .footer {
+    margin-top: -14.0625rem;
+    height: 23.5625rem;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up .footer {
+    margin: 0;
+    height: 125vh;
+    width: 30vw;
+    grid-area: foot;
+  }
 }
 /*# sourceMappingURL=main.css.map */
